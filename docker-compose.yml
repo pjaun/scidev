@@ -23,6 +23,7 @@ services:
         volumes:
             - ./www:/var/www/html
             - ./conf/nginx/default.conf:/etc/nginx/conf.d/default.conf
+            - ./sites:/etc/nginx/sites-enabled
         depends_on:
             - php
         restart: always
